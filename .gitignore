@@ -2,5 +2,5 @@
 *Browse.*
 
 # Ignore the bin and bin-int directories.
-#bin/*
-#bin-int/*
+bin/*
+bin-int/*
