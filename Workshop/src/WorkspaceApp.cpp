@@ -1,8 +1,8 @@
 #pragma once
 
-namespace SparkPlug {
-	_declspec(dllimport) void Print();
-}
+#include <Hazel.h>
+
+
 
 int main() {
 	SparkPlug::Print();
