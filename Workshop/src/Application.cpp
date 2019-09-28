@@ -4,6 +4,7 @@ namespace SparkPlug {
 	_declspec(dllimport) void Print();
 }
 
-void main() {
+int main() {
 	SparkPlug::Print();
+	return 0;
 }
