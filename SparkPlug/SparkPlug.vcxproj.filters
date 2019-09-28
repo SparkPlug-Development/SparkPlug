@@ -24,6 +24,9 @@
     <ClInclude Include="src\SparkPlug.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SparkPlug\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SparkPlug\Application.cpp">

@@ -1,10 +1,16 @@
-#pragma once
+#include <SparkPlug.h>
 
-#include <Hazel.h>
+class Workspace : public SparkPlug::Application {
+public:
+	Workspace() {
 
+	}
 
+	~Workspace() {
 
-int main() {
-	SparkPlug::Print();
-	return 0;
+	}
+};
+
+SparkPlug::Application* SparkPlug::CreateApplication() {
+	return new Workspace();
 }

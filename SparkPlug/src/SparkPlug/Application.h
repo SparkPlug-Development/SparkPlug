@@ -13,5 +13,7 @@ namespace SparkPlug {
 		void Run();
 	};
 
+	Application* CreateApplication();
+
 }
 
