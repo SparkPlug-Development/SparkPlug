@@ -1,3 +1,0 @@
-﻿  Application.cpp
-D:\!Dev\SparkPlug\Workshop\src\Application.cpp(7): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  Workshop.vcxproj -> D:\!Dev\SparkPlug\\bin\x64-Debug\Workshop\Workshop.exe

@@ -1,1 +1,6 @@
+# Ignore the Browse.VC files that cause errors.
 *Browse.*
+
+# Ignore the bin and bin-int directories.
+#bin/*
+#bin-int/*
