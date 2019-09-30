@@ -4,6 +4,7 @@
 
 namespace SparkPlug {
 
+	//	The main class for SparkPlug
 	class SPARKPLUG_API Application
 	{
 	public:
@@ -13,6 +14,8 @@ namespace SparkPlug {
 		void Run();
 	};
 
+	//	Method defined in WorkspaceApp.cpp
+	//	Returns: dynamically instance of Workspace (a pointer to a Workspace)
 	Application* CreateApplication();
 
 }

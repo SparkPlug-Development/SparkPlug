@@ -3,6 +3,16 @@
 //	For use by SparkPlug applications
 
 #include <iostream>
-#include "SparkPlug/Application.h"
 
+#include <Windows.h>
+
+//	-----	-----	-----		Classes		-----	-----	-----//
+#include "SparkPlug/Application.h"
+//	-----	-----	-----	-----	-----	-----	-----	-----//
+
+
+
+
+//	-----	-----	-----	Entry Point		-----	-----	-----//
 #include "SparkPlug/EntryPoint.h"
+//	-----	-----	-----	-----	-----	-----	-----	-----//
