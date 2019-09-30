@@ -2,4 +2,6 @@
 A game/physics engine.
 Created by Landon Zweigle and Keegan Kochis.
 
-Testing commit to readme from VS (2).
+Branch Status:
+- Logging: in progress (Landon)
+- Game Loop: in research (Keegan)
