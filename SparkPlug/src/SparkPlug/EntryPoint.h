@@ -5,23 +5,23 @@
 //	Ensure the platform is Windows
 #ifdef SP_PLATFORM_WINDOWS
 
-//	Method defined in WorkspaceApp.cpp
-//	Returns: dynamically instance of Workspace (a pointer to a Workspace)
-extern SparkPlug::Application* SparkPlug::CreateApplication();
+//	Method defined in Chassis.cpp
+//	Returns: dynamically instance of Chassis (a pointer to a Chassis)
+extern SparkPlug::ToolShed* SparkPlug::OpenToolShed();
 
 int main(int argc, char *argv[]) {
 	SetConsoleTitle("SparkPlug");
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 	std::cout << "...Engine started...\n";
 
-	//	Dynamically allocate an instance of Workspace
-	SparkPlug::Application *app = SparkPlug::CreateApplication();
+	//	Dynamically allocate a Chassis
+	SparkPlug::ToolShed *frame = SparkPlug::OpenToolShed();
 
 	//	Start the game
-	(*app).Run();
+	(*frame).Run();
 
 	//	Explicitly destroy game
-	delete app;
+	delete frame;
 
 	return 0;
 }

@@ -12,12 +12,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\SparkPlug.h" />
-    <ClInclude Include="src\SparkPlug\Application.h" />
+    <ClInclude Include="src\SparkPlug\ToolShed.h" />
     <ClInclude Include="src\SparkPlug\Core.h" />
     <ClInclude Include="src\SparkPlug\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\SparkPlug\Application.cpp" />
+    <ClCompile Include="src\SparkPlug\ToolShed.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
