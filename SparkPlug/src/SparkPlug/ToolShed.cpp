@@ -14,13 +14,22 @@ namespace SparkPlug {
 	void ToolShed::Run() {
 		//	Initialize the game
 
-		//	The game loop
+		//	Create threads for rendering, sound, networking
+
+		//-----	----- -----	GAME LOOOP	----- ----- -----//
+		//	Variables for storing times and running time delta average over a duration
+		//	Get current time
+
 		while (true) {
+			//	Update the frame start time
+
 			//	Get input from user
 
 			//	Update (AI, Physics, etc...)
 
-			//	Render graphics to the display
+			//	Update the frame end time
+
+			//	Calculate time delta for current frame and update running average
 		}
 	}
 
