@@ -5,8 +5,8 @@
 //	Ensure the platform is Windows
 #ifdef SP_PLATFORM_WINDOWS
 
-//	Method defined in Chassis.cpp
-//	Returns: dynamically instance of Chassis (a pointer to a Chassis)
+//	Method defined in Garage.cpp
+//	Returns: dynamically instance of Garage (a pointer to a Garage)
 extern SparkPlug::ToolShed* SparkPlug::OpenToolShed();
 
 int main(int argc, char *argv[]) {
@@ -14,14 +14,14 @@ int main(int argc, char *argv[]) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 	std::cout << "...Engine started...\n";
 
-	//	Dynamically allocate a Chassis
-	SparkPlug::ToolShed *frame = SparkPlug::OpenToolShed();
+	//	Dynamically allocate a Garage
+	SparkPlug::ToolShed *garage = SparkPlug::OpenToolShed();
 
 	//	Start the game
-	(*frame).Run();
+	(*garage).Run();
 
 	//	Explicitly destroy game
-	delete frame;
+	delete garage;
 
 	return 0;
 }
