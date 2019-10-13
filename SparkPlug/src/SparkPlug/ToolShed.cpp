@@ -3,6 +3,8 @@
 namespace SparkPlug {
 
 	ToolShed::ToolShed() {
+		is_running = false;
+
 		//	Initialize the vector of the frame durations to have 250 durations
 		//	250 frame durations are initialized to be over desired update time so the engine can have a slow start up
 		frame_durations.reserve(250);
@@ -36,6 +38,25 @@ namespace SparkPlug {
 	void ToolShed::Initialize() {
 		//	Set is_running to true
 		is_running = true;
+
+		//	Initialize OpenGL
+		if (!glfwInit())
+			exit;
+		window = glfwCreateWindow(640, 480, "GARAGE", NULL, NULL);
+		if (!window)
+		{
+			glfwTerminate();
+			exit;
+		}
+		glfwMakeContextCurrent(window);
+	}
+
+	void ToolShed::Render() {
+		while (is_running) {
+			//	Render to the OpenGL window
+			glClear(GL_COLOR_BUFFER_BIT);
+			glfwSwapBuffers(window);
+		}
 	}
 
 	void ToolShed::Run() {
@@ -43,6 +64,7 @@ namespace SparkPlug {
 		Initialize();
 
 		//	Create threads for rendering, sound, networking
+		std::thread render_thread (&ToolShed::Render, this);
 
 		//-----	----- -----	GAME LOOOP	----- ----- -----//
 		//	Variables for storing times and running time delta average over a duration
@@ -57,6 +79,8 @@ namespace SparkPlug {
 			FRAME_START = std::chrono::high_resolution_clock::now();
 
 			//	Get input from user
+			glfwPollEvents();
+			is_running = !glfwWindowShouldClose(window);
 
 			//	Update (AI, Physics, etc...)
 
@@ -79,7 +103,10 @@ namespace SparkPlug {
 			}
 		}
 
+		glfwTerminate();
+
 		//	Finish threads
+		render_thread.join();
 
 		//	Exit game
 	}
