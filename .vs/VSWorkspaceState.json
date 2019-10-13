@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SparkPlug\\src",
+    "\\SparkPlug\\src\\SparkPlug"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
