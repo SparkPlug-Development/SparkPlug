@@ -1,7 +1,7 @@
 # SparkPlug
-A game/physics engine.
-Created by Landon Zweigle and Keegan Kochis.
+A game/physics engine created from scratch and implemented primarily in C++ using OpenGL (GLFW).
+Created by two scholars of the most extreme intelligence.
 
-Branch Status:
-- Logging: in progress (Landon)
-- Game Loop: in research (Keegan)
+WIP Branches:
+- Logging: Adhesive
+- OpenGL_Initialization: Keegan
