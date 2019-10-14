@@ -4,4 +4,4 @@ Created by two scholars of the most extreme intelligence.
 
 WIP Branches:
 - Logging: Adhesive
-- OpenGL_Initialization: Keegan
+- OpenGL_Initialization: Kejoko
