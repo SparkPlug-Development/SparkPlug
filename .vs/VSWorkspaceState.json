@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SparkPlug",
+    "\\SparkPlug\\src",
+    "\\SparkPlug\\src\\SparkPlug"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\SparkPlug\\src\\SparkPlug\\Logging.h",
   "PreviewInSolutionExplorer": false
 }

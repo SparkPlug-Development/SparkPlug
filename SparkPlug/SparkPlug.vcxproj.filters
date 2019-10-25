@@ -27,9 +27,15 @@
     <ClInclude Include="src\SparkPlug\ToolShed.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\SparkPlug\Debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\SparkPlug\ToolShed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SparkPlug\Debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
